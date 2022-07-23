@@ -1,0 +1,332 @@
+-- Instances:
+
+local Glitxh = Instance.new("ScreenGui")
+local SideShade = Instance.new("Frame")
+local Main = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Teleports = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Credits = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local MainFrame = Instance.new("Frame")
+local TPSFrame = Instance.new("Frame")
+local CreditsFrame = Instance.new("Frame")
+local PlrImage = Instance.new("ImageLabel")
+local UICorner_4 = Instance.new("UICorner")
+local Status = Instance.new("TextLabel")
+local PlrName = Instance.new("TextLabel")
+local Border = Instance.new("Frame")
+local TitleMain = Instance.new("TextLabel")
+local BorderMain = Instance.new("Frame")
+local Premium = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local PremiumFrame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+
+--Properties:
+
+Glitxh.Name = "Glitxh"
+Glitxh.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Glitxh.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+SideShade.Name = "SideShade"
+SideShade.Parent = Glitxh
+SideShade.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+SideShade.Position = UDim2.new(0.355151534, 0, 0.263157874, 0)
+SideShade.Size = UDim2.new(0, 610, 0, 386)
+
+Main.Name = "Main"
+Main.Parent = SideShade
+Main.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Main.Position = UDim2.new(0.0147540979, 0, 0.160621762, 0)
+Main.Size = UDim2.new(0, 107, 0, 35)
+Main.Font = Enum.Font.GothamMedium
+Main.Text = "Main"
+Main.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main.TextSize = 24.000
+
+UICorner.CornerRadius = UDim.new(0, 12)
+UICorner.Parent = Main
+
+Teleports.Name = "Teleports"
+Teleports.Parent = SideShade
+Teleports.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Teleports.Position = UDim2.new(0.0147540979, 0, 0.274611413, 0)
+Teleports.Size = UDim2.new(0, 107, 0, 35)
+Teleports.Font = Enum.Font.GothamMedium
+Teleports.Text = "Teleports"
+Teleports.TextColor3 = Color3.fromRGB(255, 255, 255)
+Teleports.TextSize = 24.000
+
+UICorner_2.CornerRadius = UDim.new(0, 12)
+UICorner_2.Parent = Teleports
+
+Credits.Name = "Credits"
+Credits.Parent = SideShade
+Credits.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Credits.Position = UDim2.new(0.0147540979, 0, 0.388601065, 0)
+Credits.Size = UDim2.new(0, 107, 0, 35)
+Credits.Font = Enum.Font.GothamMedium
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 24.000
+
+UICorner_3.CornerRadius = UDim.new(0, 12)
+UICorner_3.Parent = Credits
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 170, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 144, 47))}
+UIGradient.Parent = Credits
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = SideShade
+MainFrame.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+MainFrame.Position = UDim2.new(0.209836066, 0, 0, 0)
+MainFrame.Size = UDim2.new(0, 481, 0, 386)
+
+TPSFrame.Name = "TPSFrame"
+TPSFrame.Parent = SideShade
+TPSFrame.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+TPSFrame.Position = UDim2.new(0.209836066, 0, 0, 0)
+TPSFrame.Size = UDim2.new(0, 481, 0, 386)
+TPSFrame.Visible = false
+
+CreditsFrame.Name = "CreditsFrame"
+CreditsFrame.Parent = SideShade
+CreditsFrame.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+CreditsFrame.Position = UDim2.new(0.209836066, 0, 0, 0)
+CreditsFrame.Size = UDim2.new(0, 481, 0, 386)
+CreditsFrame.Visible = false
+
+PlrImage.Name = "PlrImage"
+PlrImage.Parent = SideShade
+PlrImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlrImage.Position = UDim2.new(0.0147540979, 0, 0.862694323, 0)
+PlrImage.Size = UDim2.new(0, 45, 0, 45)
+PlrImage.Image = "rbxassetid://10334343131"
+
+UICorner_4.CornerRadius = UDim.new(0, 10000)
+UICorner_4.Parent = PlrImage
+
+Status.Name = "Status"
+Status.Parent = SideShade
+Status.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Status.BackgroundTransparency = 1.000
+Status.Position = UDim2.new(0.103278689, 0, 0.906735778, 0)
+Status.Size = UDim2.new(0, 66, 0, 25)
+Status.Font = Enum.Font.GothamMedium
+Status.Text = "Standard"
+Status.TextColor3 = Color3.fromRGB(255, 255, 255)
+Status.TextScaled = true
+Status.TextSize = 11.000
+Status.TextWrapped = true
+
+PlrName.Name = "PlrName"
+PlrName.Parent = SideShade
+PlrName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlrName.BackgroundTransparency = 1.000
+PlrName.Position = UDim2.new(0.103278689, 0, 0.834196866, 0)
+PlrName.Size = UDim2.new(0, 65, 0, 26)
+PlrName.Font = Enum.Font.GothamMedium
+PlrName.Text = "PlrName"
+PlrName.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlrName.TextScaled = true
+PlrName.TextSize = 14.000
+PlrName.TextWrapped = true
+
+Border.Name = "Border"
+Border.Parent = SideShade
+Border.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Border.Position = UDim2.new(0.103278689, 0, 0.901554406, 0)
+Border.Size = UDim2.new(0, 62, 0, 2)
+
+TitleMain.Name = "TitleMain"
+TitleMain.Parent = SideShade
+TitleMain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TitleMain.BackgroundTransparency = 1.000
+TitleMain.Position = UDim2.new(0.0409836099, 0, 0.0388601422, 0)
+TitleMain.Size = UDim2.new(0, 75, 0, 30)
+TitleMain.Font = Enum.Font.GothamMedium
+TitleMain.Text = "Glitxh"
+TitleMain.TextColor3 = Color3.fromRGB(255, 255, 255)
+TitleMain.TextScaled = true
+TitleMain.TextSize = 14.000
+TitleMain.TextWrapped = true
+
+BorderMain.Name = "BorderMain"
+BorderMain.Parent = SideShade
+BorderMain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BorderMain.Position = UDim2.new(0.0147540979, 0, 0.116580307, 0)
+BorderMain.Size = UDim2.new(0, 107, 0, 2)
+
+Premium.Name = "Premium"
+Premium.Parent = SideShade
+Premium.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Premium.Position = UDim2.new(0.0147540979, 0, 0.502590716, 0)
+Premium.Size = UDim2.new(0, 107, 0, 35)
+Premium.Font = Enum.Font.GothamMedium
+Premium.Text = "Premium+"
+Premium.TextColor3 = Color3.fromRGB(255, 255, 255)
+Premium.TextSize = 22.000
+
+UICorner_5.CornerRadius = UDim.new(0, 12)
+UICorner_5.Parent = Premium
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 170, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(153, 80, 28))}
+UIGradient_2.Parent = Premium
+
+PremiumFrame.Name = "PremiumFrame"
+PremiumFrame.Parent = SideShade
+PremiumFrame.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+PremiumFrame.Position = UDim2.new(0.209836066, 0, 0, 0)
+PremiumFrame.Size = UDim2.new(0, 481, 0, 386)
+PremiumFrame.Visible = false
+
+TextLabel.Parent = PremiumFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TextLabel.Position = UDim2.new(0.0395010412, 0, 0.038860105, 0)
+TextLabel.Size = UDim2.new(0, 450, 0, 50)
+TextLabel.Font = Enum.Font.GothamMedium
+TextLabel.Text = "Thank You For Being A Standard Member!"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0, 12)
+UICorner_6.Parent = TextLabel
+
+-- Scripts:
+
+local function UZRFEWS_fake_script() -- Main.Script 
+	local script = Instance.new('Script', Main)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.MainFrame.Visible = true
+		script.Parent.Parent.PremiumFrame.Visible = false
+		script.Parent.Parent.CreditsFrame.Visible = false
+		script.Parent.Parent.TPSFrame.Visible = false
+	end)
+end
+coroutine.wrap(UZRFEWS_fake_script)()
+local function NSVVFXX_fake_script() -- Teleports.Script 
+	local script = Instance.new('Script', Teleports)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.TPSFrame.Visible = true
+		script.Parent.Parent.MainFrame.Visible = false
+		script.Parent.Parent.PremiumFrame.Visible = false
+		script.Parent.Parent.CreditsFrame.Visible = false
+	end)
+end
+coroutine.wrap(NSVVFXX_fake_script)()
+local function KLXPEM_fake_script() -- Credits.Script 
+	local script = Instance.new('Script', Credits)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.CreditsFrame.Visible = true
+		script.Parent.Parent.TPSFrame.Visible = false
+		script.Parent.Parent.MainFrame.Visible = false
+		script.Parent.Parent.PremiumFrame.Visible = false
+	end)
+end
+coroutine.wrap(KLXPEM_fake_script)()
+local function EMFCZ_fake_script() -- Status.Script 
+	local script = Instance.new('Script', Status)
+
+	local plr = game.Players.LocalPlayer
+	local mps = game:GetService("MarketplaceService")
+	local Loading = true
+	
+	
+	if mps:UserOwnsGamePassAsync(plr.UserId, 64706090) then
+		script.Parent.Text = "Premium+"
+	else
+		script.Parent.Text = "Standard"
+		
+		while Loading == true do
+			wait()
+			if mps:UserOwnsGamePassAsync(plr.UserId, 64706090) then
+				script.Parent.Text = "Premium+"
+			else
+				script.Parent.Text = "Standard"
+				wait()
+			end
+			wait()
+		end
+	end
+end
+coroutine.wrap(EMFCZ_fake_script)()
+local function YDLMW_fake_script() -- PlrName.Script 
+	local script = Instance.new('Script', PlrName)
+
+	local plr = game.Players.LocalPlayer
+	local Loading = true
+	
+	while Loading == true do
+		wait()
+		script.Parent.Text = plr.Name
+		wait()
+	end
+	wait()
+end
+coroutine.wrap(YDLMW_fake_script)()
+local function DAEUZUO_fake_script() -- Premium.Script 
+	local script = Instance.new('Script', Premium)
+
+	local mps = game:GetService("MarketplaceService")
+	local plr = game.Players.LocalPlayer
+	local db = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if mps:UserOwnsGamePassAsync(plr.UserId, 64706090) then
+			script.Parent.Parent.PremiumFrame.Visible = true
+			script.Parent.Parent.CreditsFrame.Visible = false
+			script.Parent.Parent.TPSFrame.Visible = false
+			script.Parent.Parent.MainFrame.Visible = false
+		else
+			script.Parent.TextScaled = true
+			script.Parent.TextWrapped = true
+			script.Parent.Text = "Please Buy Premium+ To do This!"
+			wait(2)
+			script.Parent.TextScaled = false
+			script.Parent.TextWrapped = false
+			script.Parent.Text = "Premium+"
+		end
+	end)
+end
+coroutine.wrap(DAEUZUO_fake_script)()
+local function GDNVG_fake_script() -- TextLabel.Script 
+	local script = Instance.new('Script', TextLabel)
+
+	local plr = game.Players.LocalPlayer
+	local mps = game:GetService("MarketplaceService")
+	local Loading = true
+	
+	
+	if mps:UserOwnsGamePassAsync(plr.UserId, 64706090) then
+		script.Parent.Text = "Thank You For Being A Premium+ Member!"
+		
+		while Loading == true do
+			wait()
+			if mps:UserOwnsGamePassAsync(plr.UserId, 64706090) then
+				script.Parent.Text = "Thank You For Being A Premium+ Member!"
+				wait()
+			end
+			wait()
+		end
+	end
+end
+coroutine.wrap(GDNVG_fake_script)()
+local function IUVDU_fake_script() -- SideShade.Script 
+	local script = Instance.new('Script', SideShade)
+
+	local frame = script.Parent.Parent.SideShade
+	
+	frame.Selectable = true
+	frame.Active = true
+	frame.Draggable = true
+end
+coroutine.wrap(IUVDU_fake_script)()
