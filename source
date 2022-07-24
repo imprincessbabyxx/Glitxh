@@ -25,6 +25,7 @@ local UICorner_5 = Instance.new("UICorner")
 PhoneGui.Name = "PhoneGui"
 PhoneGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 PhoneGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+PhoneGui.ResetOnSpawn = false
 
 PhoneTop.Name = "PhoneTop"
 PhoneTop.Parent = PhoneGui
@@ -170,7 +171,7 @@ UICorner_5.Parent = TopButton
 
 -- Scripts:
 
-local function LLIQP_fake_script() -- TextLabel.Script 
+local function WQUMOSN_fake_script() -- TextLabel.Script 
 	local script = Instance.new('Script', TextLabel)
 
 	while wait() do
@@ -192,8 +193,8 @@ local function LLIQP_fake_script() -- TextLabel.Script
 		script.Parent.Text = hour .. ":" .. min
 	end
 end
-coroutine.wrap(LLIQP_fake_script)()
-local function DYDM_fake_script() -- PerksBtn.Script 
+coroutine.wrap(WQUMOSN_fake_script)()
+local function BZUACO_fake_script() -- PerksBtn.Script 
 	local script = Instance.new('Script', PerksBtn)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -202,8 +203,8 @@ local function DYDM_fake_script() -- PerksBtn.Script
 		script.Parent.Parent.Parent.ScreenHome.Visible = false
 	end)
 end
-coroutine.wrap(DYDM_fake_script)()
-local function RVJBSG_fake_script() -- HomeButton.Script 
+coroutine.wrap(BZUACO_fake_script)()
+local function JXHYA_fake_script() -- HomeButton.Script 
 	local script = Instance.new('Script', HomeButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -212,8 +213,8 @@ local function RVJBSG_fake_script() -- HomeButton.Script
 		script.Parent.Parent.ScreenWalkSpeed.Visible = false
 	end)
 end
-coroutine.wrap(RVJBSG_fake_script)()
-local function HMPMAI_fake_script() -- WalkSpeed.Script 
+coroutine.wrap(JXHYA_fake_script)()
+local function MTUFKQ_fake_script() -- WalkSpeed.Script 
 	local script = Instance.new('Script', WalkSpeed)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -222,8 +223,8 @@ local function HMPMAI_fake_script() -- WalkSpeed.Script
 		script.Parent.Parent.Parent.ScreenHome.Visible = false
 	end)
 end
-coroutine.wrap(HMPMAI_fake_script)()
-local function HLOAS_fake_script() -- ScreenPerks.Script 
+coroutine.wrap(MTUFKQ_fake_script)()
+local function CQYU_fake_script() -- ScreenPerks.Script 
 	local script = Instance.new('Script', ScreenPerks)
 
 	local plr = game.Players.LocalPlayer
@@ -241,8 +242,8 @@ local function HLOAS_fake_script() -- ScreenPerks.Script
 		wait()
 	end
 end
-coroutine.wrap(HLOAS_fake_script)()
-local function DWJYI_fake_script() -- AddSpeed.Script 
+coroutine.wrap(CQYU_fake_script)()
+local function APMVP_fake_script() -- AddSpeed.Script 
 	local script = Instance.new('Script', AddSpeed)
 
 	local plr = game.Players.LocalPlayer
@@ -254,8 +255,8 @@ local function DWJYI_fake_script() -- AddSpeed.Script
 		end
 	end)
 end
-coroutine.wrap(DWJYI_fake_script)()
-local function MXFN_fake_script() -- DefaultSpeed.Script 
+coroutine.wrap(APMVP_fake_script)()
+local function CLXNNG_fake_script() -- DefaultSpeed.Script 
 	local script = Instance.new('Script', DefaultSpeed)
 
 	local plr = game.Players.LocalPlayer
@@ -267,8 +268,8 @@ local function MXFN_fake_script() -- DefaultSpeed.Script
 		end
 	end)
 end
-coroutine.wrap(MXFN_fake_script)()
-local function YZBDX_fake_script() -- TopButton.Script 
+coroutine.wrap(CLXNNG_fake_script)()
+local function PBNETT_fake_script() -- TopButton.Script 
 	local script = Instance.new('Script', TopButton)
 
 	local isOpen = false
@@ -285,4 +286,4 @@ local function YZBDX_fake_script() -- TopButton.Script
 		end
 	end)
 end
-coroutine.wrap(YZBDX_fake_script)()
+coroutine.wrap(PBNETT_fake_script)()
