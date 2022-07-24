@@ -1,332 +1,293 @@
+-- Gui to Lua
+-- Version: 3.2
+
 -- Instances:
 
-local Glitxh = Instance.new("ScreenGui")
-local SideShade = Instance.new("Frame")
-local Main = Instance.new("TextButton")
+local PhoneGui = Instance.new("ScreenGui")
+local PhoneTop = Instance.new("Frame")
+local PhoneMain = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local Teleports = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
-local Credits = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
-local UIGradient = Instance.new("UIGradient")
-local MainFrame = Instance.new("Frame")
-local TPSFrame = Instance.new("Frame")
-local CreditsFrame = Instance.new("Frame")
-local PlrImage = Instance.new("ImageLabel")
-local UICorner_4 = Instance.new("UICorner")
-local Status = Instance.new("TextLabel")
-local PlrName = Instance.new("TextLabel")
-local Border = Instance.new("Frame")
-local TitleMain = Instance.new("TextLabel")
-local BorderMain = Instance.new("Frame")
-local Premium = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
-local UIGradient_2 = Instance.new("UIGradient")
-local PremiumFrame = Instance.new("Frame")
+local ScreenHome = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
-local UICorner_6 = Instance.new("UICorner")
+local PerksBtn = Instance.new("ImageButton")
+local HomeButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local ScreenPerks = Instance.new("Frame")
+local WalkSpeed = Instance.new("ImageButton")
+local Lock = Instance.new("ImageButton")
+local ScreenWalkSpeed = Instance.new("Frame")
+local AddSpeed = Instance.new("TextButton")
+local DefaultSpeed = Instance.new("TextButton")
+local Description = Instance.new("TextLabel")
+local TopSpeaker = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
+local TopButton = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
 
 --Properties:
 
-Glitxh.Name = "Glitxh"
-Glitxh.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-Glitxh.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+PhoneGui.Name = "PhoneGui"
+PhoneGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+PhoneGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-SideShade.Name = "SideShade"
-SideShade.Parent = Glitxh
-SideShade.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-SideShade.Position = UDim2.new(0.355151534, 0, 0.263157874, 0)
-SideShade.Size = UDim2.new(0, 610, 0, 386)
+PhoneTop.Name = "PhoneTop"
+PhoneTop.Parent = PhoneGui
+PhoneTop.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+PhoneTop.Position = UDim2.new(0.706783414, 0, 0.958384275, 0)
+PhoneTop.Size = UDim2.new(0, 262, 0, 46)
 
-Main.Name = "Main"
-Main.Parent = SideShade
-Main.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Main.Position = UDim2.new(0.0147540979, 0, 0.160621762, 0)
-Main.Size = UDim2.new(0, 107, 0, 35)
-Main.Font = Enum.Font.GothamMedium
-Main.Text = "Main"
-Main.TextColor3 = Color3.fromRGB(255, 255, 255)
-Main.TextSize = 24.000
+PhoneMain.Name = "PhoneMain"
+PhoneMain.Parent = PhoneTop
+PhoneMain.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+PhoneMain.Position = UDim2.new(-0.00102448463, 0, 0.566133738, 0)
+PhoneMain.Size = UDim2.new(0, 262, 0, 411)
 
 UICorner.CornerRadius = UDim.new(0, 12)
-UICorner.Parent = Main
+UICorner.Parent = PhoneMain
 
-Teleports.Name = "Teleports"
-Teleports.Parent = SideShade
-Teleports.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Teleports.Position = UDim2.new(0.0147540979, 0, 0.274611413, 0)
-Teleports.Size = UDim2.new(0, 107, 0, 35)
-Teleports.Font = Enum.Font.GothamMedium
-Teleports.Text = "Teleports"
-Teleports.TextColor3 = Color3.fromRGB(255, 255, 255)
-Teleports.TextSize = 24.000
+ScreenHome.Name = "ScreenHome"
+ScreenHome.Parent = PhoneMain
+ScreenHome.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+ScreenHome.Position = UDim2.new(0.0315281525, 0, 0.0195613969, 0)
+ScreenHome.Size = UDim2.new(0, 245, 0, 350)
 
-UICorner_2.CornerRadius = UDim.new(0, 12)
-UICorner_2.Parent = Teleports
-
-Credits.Name = "Credits"
-Credits.Parent = SideShade
-Credits.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Credits.Position = UDim2.new(0.0147540979, 0, 0.388601065, 0)
-Credits.Size = UDim2.new(0, 107, 0, 35)
-Credits.Font = Enum.Font.GothamMedium
-Credits.Text = "Credits"
-Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
-Credits.TextSize = 24.000
-
-UICorner_3.CornerRadius = UDim.new(0, 12)
-UICorner_3.Parent = Credits
-
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 170, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 144, 47))}
-UIGradient.Parent = Credits
-
-MainFrame.Name = "MainFrame"
-MainFrame.Parent = SideShade
-MainFrame.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
-MainFrame.Position = UDim2.new(0.209836066, 0, 0, 0)
-MainFrame.Size = UDim2.new(0, 481, 0, 386)
-
-TPSFrame.Name = "TPSFrame"
-TPSFrame.Parent = SideShade
-TPSFrame.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
-TPSFrame.Position = UDim2.new(0.209836066, 0, 0, 0)
-TPSFrame.Size = UDim2.new(0, 481, 0, 386)
-TPSFrame.Visible = false
-
-CreditsFrame.Name = "CreditsFrame"
-CreditsFrame.Parent = SideShade
-CreditsFrame.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
-CreditsFrame.Position = UDim2.new(0.209836066, 0, 0, 0)
-CreditsFrame.Size = UDim2.new(0, 481, 0, 386)
-CreditsFrame.Visible = false
-
-PlrImage.Name = "PlrImage"
-PlrImage.Parent = SideShade
-PlrImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PlrImage.Position = UDim2.new(0.0147540979, 0, 0.862694323, 0)
-PlrImage.Size = UDim2.new(0, 45, 0, 45)
-PlrImage.Image = "rbxassetid://10334343131"
-
-UICorner_4.CornerRadius = UDim.new(0, 10000)
-UICorner_4.Parent = PlrImage
-
-Status.Name = "Status"
-Status.Parent = SideShade
-Status.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Status.BackgroundTransparency = 1.000
-Status.Position = UDim2.new(0.103278689, 0, 0.906735778, 0)
-Status.Size = UDim2.new(0, 66, 0, 25)
-Status.Font = Enum.Font.GothamMedium
-Status.Text = "Standard"
-Status.TextColor3 = Color3.fromRGB(255, 255, 255)
-Status.TextScaled = true
-Status.TextSize = 11.000
-Status.TextWrapped = true
-
-PlrName.Name = "PlrName"
-PlrName.Parent = SideShade
-PlrName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PlrName.BackgroundTransparency = 1.000
-PlrName.Position = UDim2.new(0.103278689, 0, 0.834196866, 0)
-PlrName.Size = UDim2.new(0, 65, 0, 26)
-PlrName.Font = Enum.Font.GothamMedium
-PlrName.Text = "PlrName"
-PlrName.TextColor3 = Color3.fromRGB(255, 255, 255)
-PlrName.TextScaled = true
-PlrName.TextSize = 14.000
-PlrName.TextWrapped = true
-
-Border.Name = "Border"
-Border.Parent = SideShade
-Border.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Border.Position = UDim2.new(0.103278689, 0, 0.901554406, 0)
-Border.Size = UDim2.new(0, 62, 0, 2)
-
-TitleMain.Name = "TitleMain"
-TitleMain.Parent = SideShade
-TitleMain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TitleMain.BackgroundTransparency = 1.000
-TitleMain.Position = UDim2.new(0.0409836099, 0, 0.0388601422, 0)
-TitleMain.Size = UDim2.new(0, 75, 0, 30)
-TitleMain.Font = Enum.Font.GothamMedium
-TitleMain.Text = "Glitxh"
-TitleMain.TextColor3 = Color3.fromRGB(255, 255, 255)
-TitleMain.TextScaled = true
-TitleMain.TextSize = 14.000
-TitleMain.TextWrapped = true
-
-BorderMain.Name = "BorderMain"
-BorderMain.Parent = SideShade
-BorderMain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-BorderMain.Position = UDim2.new(0.0147540979, 0, 0.116580307, 0)
-BorderMain.Size = UDim2.new(0, 107, 0, 2)
-
-Premium.Name = "Premium"
-Premium.Parent = SideShade
-Premium.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Premium.Position = UDim2.new(0.0147540979, 0, 0.502590716, 0)
-Premium.Size = UDim2.new(0, 107, 0, 35)
-Premium.Font = Enum.Font.GothamMedium
-Premium.Text = "Premium+"
-Premium.TextColor3 = Color3.fromRGB(255, 255, 255)
-Premium.TextSize = 22.000
-
-UICorner_5.CornerRadius = UDim.new(0, 12)
-UICorner_5.Parent = Premium
-
-UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 170, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(153, 80, 28))}
-UIGradient_2.Parent = Premium
-
-PremiumFrame.Name = "PremiumFrame"
-PremiumFrame.Parent = SideShade
-PremiumFrame.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
-PremiumFrame.Position = UDim2.new(0.209836066, 0, 0, 0)
-PremiumFrame.Size = UDim2.new(0, 481, 0, 386)
-PremiumFrame.Visible = false
-
-TextLabel.Parent = PremiumFrame
-TextLabel.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-TextLabel.Position = UDim2.new(0.0395010412, 0, 0.038860105, 0)
-TextLabel.Size = UDim2.new(0, 450, 0, 50)
+TextLabel.Parent = ScreenHome
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0938775539, 0, 0.0314285718, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
 TextLabel.Font = Enum.Font.GothamMedium
-TextLabel.Text = "Thank You For Being A Standard Member!"
+TextLabel.Text = "."
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
-UICorner_6.CornerRadius = UDim.new(0, 12)
-UICorner_6.Parent = TextLabel
+PerksBtn.Name = "PerksBtn"
+PerksBtn.Parent = ScreenHome
+PerksBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PerksBtn.BackgroundTransparency = 1.000
+PerksBtn.Position = UDim2.new(0.334693879, 0, 0.708571434, 0)
+PerksBtn.Size = UDim2.new(0, 82, 0, 82)
+PerksBtn.Image = "rbxassetid://10343317688"
+
+HomeButton.Name = "HomeButton"
+HomeButton.Parent = PhoneMain
+HomeButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+HomeButton.Position = UDim2.new(0.432322234, 0, 0.890510976, 0)
+HomeButton.Size = UDim2.new(0, 35, 0, 35)
+HomeButton.Font = Enum.Font.SourceSans
+HomeButton.Text = "....."
+HomeButton.TextColor3 = Color3.fromRGB(40, 40, 40)
+HomeButton.TextSize = 14.000
+
+UICorner_2.CornerRadius = UDim.new(0, 999)
+UICorner_2.Parent = HomeButton
+
+ScreenPerks.Name = "ScreenPerks"
+ScreenPerks.Parent = PhoneMain
+ScreenPerks.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+ScreenPerks.Position = UDim2.new(0.0315281525, 0, 0.0195613969, 0)
+ScreenPerks.Size = UDim2.new(0, 245, 0, 350)
+ScreenPerks.Visible = false
+
+WalkSpeed.Name = "WalkSpeed"
+WalkSpeed.Parent = ScreenPerks
+WalkSpeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WalkSpeed.BackgroundTransparency = 1.000
+WalkSpeed.Position = UDim2.new(0.0897959173, 0, 0.0742857084, 0)
+WalkSpeed.Size = UDim2.new(0, 75, 0, 75)
+WalkSpeed.Image = "rbxassetid://10343396757"
+
+Lock.Name = "Lock"
+Lock.Parent = ScreenPerks
+Lock.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Lock.BackgroundTransparency = 1.000
+Lock.Position = UDim2.new(0.0897958875, 0, 0.0742857084, 0)
+Lock.Size = UDim2.new(0, 75, 0, 75)
+Lock.Image = "http://www.roblox.com/asset/?id=6088994136"
+
+ScreenWalkSpeed.Name = "ScreenWalkSpeed"
+ScreenWalkSpeed.Parent = PhoneMain
+ScreenWalkSpeed.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+ScreenWalkSpeed.Position = UDim2.new(0.0315281525, 0, 0.0195613969, 0)
+ScreenWalkSpeed.Size = UDim2.new(0, 245, 0, 350)
+ScreenWalkSpeed.Visible = false
+
+AddSpeed.Name = "AddSpeed"
+AddSpeed.Parent = ScreenWalkSpeed
+AddSpeed.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+AddSpeed.Position = UDim2.new(0, 0, 0.768571496, 0)
+AddSpeed.Size = UDim2.new(0, 245, 0, 40)
+AddSpeed.Font = Enum.Font.GothamMedium
+AddSpeed.Text = "+50 WalkSpeed"
+AddSpeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+AddSpeed.TextSize = 14.000
+
+DefaultSpeed.Name = "DefaultSpeed"
+DefaultSpeed.Parent = ScreenWalkSpeed
+DefaultSpeed.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+DefaultSpeed.Position = UDim2.new(0, 0, 0.882857203, 0)
+DefaultSpeed.Size = UDim2.new(0, 245, 0, 40)
+DefaultSpeed.Font = Enum.Font.GothamMedium
+DefaultSpeed.Text = "Default WalkSpeed"
+DefaultSpeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+DefaultSpeed.TextSize = 14.000
+
+Description.Name = "Description"
+Description.Parent = ScreenWalkSpeed
+Description.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Description.BackgroundTransparency = 1.000
+Description.Position = UDim2.new(0.0938775539, 0, 0.0314285718, 0)
+Description.Size = UDim2.new(0, 200, 0, 81)
+Description.Font = Enum.Font.GothamMedium
+Description.Text = "These Buttons Allow You To Modify Your WalkSpeed"
+Description.TextColor3 = Color3.fromRGB(255, 255, 255)
+Description.TextScaled = true
+Description.TextSize = 14.000
+Description.TextWrapped = true
+
+TopSpeaker.Name = "TopSpeaker"
+TopSpeaker.Parent = PhoneTop
+TopSpeaker.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TopSpeaker.Position = UDim2.new(0.354961842, 0, 0.260869563, 0)
+TopSpeaker.Size = UDim2.new(0, 75, 0, 10)
+
+UICorner_3.CornerRadius = UDim.new(0, 99999)
+UICorner_3.Parent = TopSpeaker
+
+UICorner_4.CornerRadius = UDim.new(0, 12)
+UICorner_4.Parent = PhoneTop
+
+TopButton.Name = "TopButton"
+TopButton.Parent = PhoneTop
+TopButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TopButton.Position = UDim2.new(0.744274795, 0, 0.173913002, 0)
+TopButton.Size = UDim2.new(0, 17, 0, 17)
+TopButton.Font = Enum.Font.SourceSans
+TopButton.Text = ""
+TopButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TopButton.TextSize = 14.000
+
+UICorner_5.CornerRadius = UDim.new(0, 99999)
+UICorner_5.Parent = TopButton
 
 -- Scripts:
 
-local function UZRFEWS_fake_script() -- Main.Script 
-	local script = Instance.new('Script', Main)
+local function LLIQP_fake_script() -- TextLabel.Script 
+	local script = Instance.new('Script', TextLabel)
+
+	while wait() do
+		
+		
+		local t = tick()
+		
+		
+		local min = math.floor((t/60)% 60)
+		
+		local hour = math.floor((t/3600)% 24)
+		
+		
+		if string.len(min) < 2 then min = "0" .. tostring(min) end
+		
+		if string.len(hour) < 2 then hour = "0" .. tostring(hour) end
+		
+		
+		script.Parent.Text = hour .. ":" .. min
+	end
+end
+coroutine.wrap(LLIQP_fake_script)()
+local function DYDM_fake_script() -- PerksBtn.Script 
+	local script = Instance.new('Script', PerksBtn)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.MainFrame.Visible = true
-		script.Parent.Parent.PremiumFrame.Visible = false
-		script.Parent.Parent.CreditsFrame.Visible = false
-		script.Parent.Parent.TPSFrame.Visible = false
+		script.Parent.Parent.Parent.ScreenPerks.Visible = true
+		script.Parent.Parent.Parent.ScreenWalkSpeed.Visible = false
+		script.Parent.Parent.Parent.ScreenHome.Visible = false
 	end)
 end
-coroutine.wrap(UZRFEWS_fake_script)()
-local function NSVVFXX_fake_script() -- Teleports.Script 
-	local script = Instance.new('Script', Teleports)
+coroutine.wrap(DYDM_fake_script)()
+local function RVJBSG_fake_script() -- HomeButton.Script 
+	local script = Instance.new('Script', HomeButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.TPSFrame.Visible = true
-		script.Parent.Parent.MainFrame.Visible = false
-		script.Parent.Parent.PremiumFrame.Visible = false
-		script.Parent.Parent.CreditsFrame.Visible = false
+		script.Parent.Parent.ScreenHome.Visible = true
+		script.Parent.Parent.ScreenPerks.Visible = false
+		script.Parent.Parent.ScreenWalkSpeed.Visible = false
 	end)
 end
-coroutine.wrap(NSVVFXX_fake_script)()
-local function KLXPEM_fake_script() -- Credits.Script 
-	local script = Instance.new('Script', Credits)
+coroutine.wrap(RVJBSG_fake_script)()
+local function HMPMAI_fake_script() -- WalkSpeed.Script 
+	local script = Instance.new('Script', WalkSpeed)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.CreditsFrame.Visible = true
-		script.Parent.Parent.TPSFrame.Visible = false
-		script.Parent.Parent.MainFrame.Visible = false
-		script.Parent.Parent.PremiumFrame.Visible = false
+		script.Parent.Parent.Parent.ScreenWalkSpeed.Visible = true
+		script.Parent.Parent.Parent.ScreenPerks.Visible = false
+		script.Parent.Parent.Parent.ScreenHome.Visible = false
 	end)
 end
-coroutine.wrap(KLXPEM_fake_script)()
-local function EMFCZ_fake_script() -- Status.Script 
-	local script = Instance.new('Script', Status)
+coroutine.wrap(HMPMAI_fake_script)()
+local function HLOAS_fake_script() -- ScreenPerks.Script 
+	local script = Instance.new('Script', ScreenPerks)
 
 	local plr = game.Players.LocalPlayer
 	local mps = game:GetService("MarketplaceService")
-	local Loading = true
-	
-	
-	if mps:UserOwnsGamePassAsync(plr.UserId, 64706090) then
-		script.Parent.Text = "Premium+"
-	else
-		script.Parent.Text = "Standard"
-		
-		while Loading == true do
-			wait()
-			if mps:UserOwnsGamePassAsync(plr.UserId, 64706090) then
-				script.Parent.Text = "Premium+"
-			else
-				script.Parent.Text = "Standard"
-				wait()
-			end
-			wait()
-		end
-	end
-end
-coroutine.wrap(EMFCZ_fake_script)()
-local function YDLMW_fake_script() -- PlrName.Script 
-	local script = Instance.new('Script', PlrName)
-
-	local plr = game.Players.LocalPlayer
 	local Loading = true
 	
 	while Loading == true do
 		wait()
-		script.Parent.Text = plr.Name
+		if mps:UserOwnsGamePassAsync(plr.UserId, 65004244) then
+			script.Parent.Lock.Visible = false
+		else
+			script.Parent.Lock.Visible = true
+			wait()
+		end
 		wait()
 	end
-	wait()
 end
-coroutine.wrap(YDLMW_fake_script)()
-local function DAEUZUO_fake_script() -- Premium.Script 
-	local script = Instance.new('Script', Premium)
+coroutine.wrap(HLOAS_fake_script)()
+local function DWJYI_fake_script() -- AddSpeed.Script 
+	local script = Instance.new('Script', AddSpeed)
 
-	local mps = game:GetService("MarketplaceService")
 	local plr = game.Players.LocalPlayer
-	local db = false
 	
 	script.Parent.MouseButton1Click:Connect(function()
-		if mps:UserOwnsGamePassAsync(plr.UserId, 64706090) then
-			script.Parent.Parent.PremiumFrame.Visible = true
-			script.Parent.Parent.CreditsFrame.Visible = false
-			script.Parent.Parent.TPSFrame.Visible = false
-			script.Parent.Parent.MainFrame.Visible = false
-		else
-			script.Parent.TextScaled = true
-			script.Parent.TextWrapped = true
-			script.Parent.Text = "Please Buy Premium+ To do This!"
-			wait(2)
-			script.Parent.TextScaled = false
-			script.Parent.TextWrapped = false
-			script.Parent.Text = "Premium+"
+		local hum = plr.Character:WaitForChild("Humanoid")
+		if hum then
+			hum.WalkSpeed = hum.WalkSpeed + 50
 		end
 	end)
 end
-coroutine.wrap(DAEUZUO_fake_script)()
-local function GDNVG_fake_script() -- TextLabel.Script 
-	local script = Instance.new('Script', TextLabel)
+coroutine.wrap(DWJYI_fake_script)()
+local function MXFN_fake_script() -- DefaultSpeed.Script 
+	local script = Instance.new('Script', DefaultSpeed)
 
 	local plr = game.Players.LocalPlayer
-	local mps = game:GetService("MarketplaceService")
-	local Loading = true
 	
-	
-	if mps:UserOwnsGamePassAsync(plr.UserId, 64706090) then
-		script.Parent.Text = "Thank You For Being A Premium+ Member!"
-		
-		while Loading == true do
-			wait()
-			if mps:UserOwnsGamePassAsync(plr.UserId, 64706090) then
-				script.Parent.Text = "Thank You For Being A Premium+ Member!"
-				wait()
-			end
-			wait()
+	script.Parent.MouseButton1Click:Connect(function()
+		local hum = plr.Character:WaitForChild("Humanoid")
+		if hum then
+			hum.WalkSpeed = 16
 		end
-	end
+	end)
 end
-coroutine.wrap(GDNVG_fake_script)()
-local function IUVDU_fake_script() -- SideShade.Script 
-	local script = Instance.new('Script', SideShade)
+coroutine.wrap(MXFN_fake_script)()
+local function YZBDX_fake_script() -- TopButton.Script 
+	local script = Instance.new('Script', TopButton)
 
-	local frame = script.Parent.Parent.SideShade
+	local isOpen = false
 	
-	frame.Selectable = true
-	frame.Active = true
-	frame.Draggable = true
+	script.Parent.MouseButton1Click:Connect(function()
+		if isOpen == false then
+			script.Parent.Parent.Parent.PhoneTop:TweenPosition(UDim2.new(0.707, 0,0.458, 0))
+			wait(1)
+			isOpen = true
+		elseif isOpen == true then
+			script.Parent.Parent.Parent.PhoneTop:TweenPosition(UDim2.new(0.707, 0,0.958, 0))
+			wait(1)
+			isOpen = false
+		end
+	end)
 end
-coroutine.wrap(IUVDU_fake_script)()
+coroutine.wrap(YZBDX_fake_script)()
